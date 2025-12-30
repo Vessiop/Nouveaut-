@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PONG - Retro Arcade</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="game-container">
+        <!-- Effet scanline -->
+        <div class="scanline-overlay"></div>
+        
+        <!-- Titre -->
+        <div class="title-section">
+            <h1 class="game-title">P◉NG</h1>
+            <p class="subtitle">RETRO ARCADE EDITION</p>
+        </div>
+        
+        <!-- Scores -->
+        <div class="score-board">
+            <div class="player-score">
+                <div class="player-label player1-label">PLAYER 1</div>
+                <div class="score player1-score" id="score1">0</div>
+            </div>
+            <div class="player-score">
+                <div class="player-label player2-label">PLAYER 2</div>
+                <div class="score player2-score" id="score2">0</div>
+            </div>
+        </div>
+        
+        <!-- Canvas du jeu -->
+        <div class="canvas-wrapper">
+            <canvas id="gameCanvas" width="800" height="500"></canvas>
+            
+            <!-- Écran de démarrage -->
+            <div class="start-overlay" id="startOverlay">
+                <div class="start-content">
+                    <div class="start-text">PRESS SPACE TO START</div>
+                    <div class="controls-info">
+                        <div class="control-line player1-color">PLAYER 1: W / S</div>
+                        <div class="control-line player2-color">PLAYER 2: ↑ / ↓</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Boutons de contrôle -->
+        <div class="button-container">
+            <button class="btn btn-primary" id="startBtn">START</button>
+            <button class="btn btn-secondary" id="resetBtn">RESET</button>
+        </div>
+        
+        <!-- Instructions -->
+        <div class="instructions">
+            <div>La balle accélère à chaque rebond • Premier à 10 points gagne</div>
+            <div class="good-luck">Bon courage ! 🎮</div>
+        </div>
+    </div>
+    
+    <script src="code.JS"></script>
+</body>
+</html>
+
+zz
